@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 13.5px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/*Substituição da tag <div com a class .instagram-wrapper> pela tag <section> para diferenciar o container principal (pai)*/
+
+section {
+    display: flex; 
+    align-items: center; 
+    justify-content: start; 
+    width: 60%; 
+    height: 100vh;
+    margin-top: 3rem;           /*acrescentado para distanciar a margem do topo*/
+    padding-bottom: 30px;       /*acrescentado para posicionar melhor o rodapé*/
+}
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instagram-phone img {
+    height: 45rem;              /*reduzi para 42rem*/
+}
+ 
+/*Ideia do código Keyframes para animação copiado da também participante do Decola Dev Thayná Alexandra que compartilhou a sua recriação com a animação no LinkedIn (Obrigada Thayná S2). Fiz alguns ajustes */
+  
+.instagram-phone-anima img {
+    height: 45rem;              /*reduzi para 42rem para acompanhar o tamanho acima*/
+  }
+  
+  .anima {
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes animacao {
+    
+    20% {
+      opacity: 1;
+      transform: scale(1,1) ;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .anima:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .anima:nth-child(2) {
+    animation-delay: 8s; 
+  }
+  
+  .anima:nth-child(3) {
+    animation-delay: 15s;
+  }
+  /*fim do código de animação*/
+
+.instagram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    flex-direction: column;
+    width: 43%;             /*alterei de 50% para 43%, achei mais parecido com original*/
+    min-height: 34rem;
+    margin-top: 2rem;       /*acrescentei para abaixar um pouco o container*/
+    margin-left: 1rem;      /*acrescentei para distanciar do container da foto*/
+    
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1rem 0;        /*reduzi para 1rem*/
+    border: 1px solid lightgray;
+    margin-top: 0.8rem;     /*acrescentei para dar espaçamento mais parecido entre o login e o cadastre-se*/ 
+}
+
+.group:nth-child(1) {
+    min-height: 19rem; 
+}
+
+.instagram-logo {
+    height: 3.5rem;         /*aumentei de 3rem para 3.5rem*/
+    margin-top: 1rem;       /*acrescentado*/
+    margin-bottom: 1rem;    /*acrecentado*/
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; 
+}
+
+.profile-photo img {
+    height: 6.2rem;         /*aumentei de 6rem para 6.2rem*/
+
+}
+
+.instagram-login {
+    background-color: #0095f6;
+    color: white;
+    padding: 7px;           /*diminui 1px*/
+    border-radius: 4px;
+    font-weight: bold;      /*acrescentei para ficar negrito */ 
+    margin-top: 2.5rem;     /*acrescentei margens para espaçamento*/
+    margin-bottom: 1rem;    /*Acrescentei*/
+}
+
+.instagram-logout {
+    color: #0095f6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;    /*acrescentei*/
+    font-weight: bold;      /*acrescentei*/  
+}
+
+.not-account{
+    color: rgb(160,160,160);
+    height: 1.8rem;         /*acrescentei pra deixar um pouco mais alto*/
+}
+
+.link-blue {
+    color: #0095f6;
+    font-weight: bold;      /*acrescentei pra deixar negrito*/
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;  
+}
+
+/*get-app abaixo acrescentado para ajustar fonte*/
+
+.get-app {
+    font-weight: lighter;
+    font-size: 13.5px;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5rem;        /*alterei de 1rem para 1.5rem para aproximar um pouco mais os botões*/
+}
+
+.app-down {
+    height: 3rem; 
+    width: 10rem;
+    background-size: cover;
+    border-radius: 10px;    /*acrescentei para arredondar os botões*/
+}
+
+.app-down:nth-child(1) {
+    background-image: url("./_fotos/apple-button.png");
+}
+
+.app-down:nth-child(2) {
+    background-image: url("./_fotos/googleplay-button.png");
+}
+
+
+/* Trabalhando com responsividade (acrescentei o max-width 1920px e 1680px após instalar o Window Resizer e perceber muita diferença) - media queries*/
+
+@media (max-width: 1920px) {
+    section {
+        width: 60%;
+    } 
+}
+
+@media (max-width: 1680px) {
+    section {
+        width: 60%;     
+    }
+}
+
+@media (max-width: 1024px) {
+    section {
+        width: 90%;
+    }  
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    .instagram-phone {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    } 
+    
+    /*acrescentei para unir mais os botões na tela do celular*/
+    .download {
+        justify-content: center;
+    }
+}
+
+    
+
+   
+ 
+
+
+
