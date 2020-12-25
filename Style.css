@@ -17,16 +17,14 @@ body {
     justify-content: center;
 }
 
-/*Substituição da tag <div com a class .instagram-wrapper> pela tag <section> para diferenciar o container principal (pai)*/
-
 section {
     display: flex; 
     align-items: center; 
     justify-content: start; 
     width: 60%; 
     height: 100vh;
-    margin-top: 3rem;           /*acrescentado para distanciar a margem do topo*/
-    padding-bottom: 30px;       /*acrescentado para posicionar melhor o rodapé*/
+    margin-top: 3rem;           
+    padding-bottom: 30px;       
 }
 
 .instagram-phone {
@@ -37,13 +35,11 @@ section {
 }
 
 .instagram-phone img {
-    height: 45rem;              /*reduzi para 42rem*/
+    height: 45rem;           
 }
- 
-/*Ideia do código Keyframes para animação copiado da também participante do Decola Dev Thayná Alexandra que compartilhou a sua recriação com a animação no LinkedIn (Obrigada Thayná S2). Fiz alguns ajustes */
-  
+   
 .instagram-phone-anima img {
-    height: 45rem;              /*reduzi para 42rem para acompanhar o tamanho acima*/
+    height: 45rem;              
   }
   
   .anima {
@@ -77,18 +73,16 @@ section {
   .anima:nth-child(3) {
     animation-delay: 15s;
   }
-  /*fim do código de animação*/
 
 .instagram-continue {
     display: flex;
     align-items: center;
     justify-content: space-around; 
     flex-direction: column;
-    width: 43%;             /*alterei de 50% para 43%, achei mais parecido com original*/
+    width: 43%;             
     min-height: 34rem;
-    margin-top: 2rem;       /*acrescentei para abaixar um pouco o container*/
-    margin-left: 1rem;      /*acrescentei para distanciar do container da foto*/
-    
+    margin-top: 2rem;     
+    margin-left: 1rem;         
 }
 
 .group{
@@ -98,9 +92,9 @@ section {
     flex-direction: column;
     background-color: #ffffff;
     width: 100%;
-    padding: 1rem 0;        /*reduzi para 1rem*/
+    padding: 1rem 0;        
     border: 1px solid lightgray;
-    margin-top: 0.8rem;     /*acrescentei para dar espaçamento mais parecido entre o login e o cadastre-se*/ 
+    margin-top: 0.8rem;    
 }
 
 .group:nth-child(1) {
@@ -108,9 +102,9 @@ section {
 }
 
 .instagram-logo {
-    height: 3.5rem;         /*aumentei de 3rem para 3.5rem*/
-    margin-top: 1rem;       /*acrescentado*/
-    margin-bottom: 1rem;    /*acrecentado*/
+    height: 3.5rem;       
+    margin-top: 1rem;       
+    margin-bottom: 1rem;    
 }
 
 .profile-photo {
@@ -122,35 +116,34 @@ section {
 }
 
 .profile-photo img {
-    height: 6.2rem;         /*aumentei de 6rem para 6.2rem*/
-
+    height: 6.2rem;         
 }
 
 .instagram-login {
     background-color: #0095f6;
     color: white;
-    padding: 7px;           /*diminui 1px*/
+    padding: 7px;          
     border-radius: 4px;
-    font-weight: bold;      /*acrescentei para ficar negrito */ 
-    margin-top: 2.5rem;     /*acrescentei margens para espaçamento*/
-    margin-bottom: 1rem;    /*Acrescentei*/
+    font-weight: bold;       
+    margin-top: 2.5rem;     
+    margin-bottom: 1rem;    
 }
 
 .instagram-logout {
     color: #0095f6;
     margin-top: 1rem;
-    margin-bottom: 1rem;    /*acrescentei*/
-    font-weight: bold;      /*acrescentei*/  
+    margin-bottom: 1rem;    
+    font-weight: bold;      
 }
 
 .not-account{
     color: rgb(160,160,160);
-    height: 1.8rem;         /*acrescentei pra deixar um pouco mais alto*/
+    height: 1.8rem;         
 }
 
 .link-blue {
     color: #0095f6;
-    font-weight: bold;      /*acrescentei pra deixar negrito*/
+    font-weight: bold;     
 }
 
 .get-the-app {
@@ -162,8 +155,6 @@ section {
     padding: 2rem 0;  
 }
 
-/*get-app abaixo acrescentado para ajustar fonte*/
-
 .get-app {
     font-weight: lighter;
     font-size: 13.5px;
@@ -174,14 +165,14 @@ section {
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1.5rem;        /*alterei de 1rem para 1.5rem para aproximar um pouco mais os botões*/
+    padding: 1.5rem;        
 }
 
 .app-down {
     height: 3rem; 
     width: 10rem;
     background-size: cover;
-    border-radius: 10px;    /*acrescentei para arredondar os botões*/
+    border-radius: 10px;    
 }
 
 .app-down:nth-child(1) {
@@ -191,9 +182,6 @@ section {
 .app-down:nth-child(2) {
     background-image: url("./_fotos/googleplay-button.png");
 }
-
-
-/* Trabalhando com responsividade (acrescentei o max-width 1920px e 1680px após instalar o Window Resizer e perceber muita diferença) - media queries*/
 
 @media (max-width: 1920px) {
     section {
@@ -234,7 +222,6 @@ section {
         border: 1px solid transparent;
     } 
     
-    /*acrescentei para unir mais os botões na tela do celular*/
     .download {
         justify-content: center;
     }
