@@ -10,7 +10,7 @@ Agradeço também participante do Decola Dev Thayná Alexandra por compartilhar 
 
 Da uma olhadinha como ficou:
 <p align="left">
-  <img width="500" height="290" src="fotos\interface-instagram.gif">
+  <img width="500" height="290" src="fotos\nterface-instagram.gif">
   </P>
 
 OBS: Meu próximo desafio, será incluir o rodapé da página como na Interface original. :wink:
