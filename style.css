@@ -175,11 +175,11 @@
   }
   
   .app-down:nth-child(1) {
-    background-image: url("./_fotos/apple-button.png");
+    background-image: url("./fotos/apple-button.png");
   }
   
   .app-down:nth-child(2) {
-    background-image: url("./_fotos/googleplay-button.png");
+    background-image: url("./fotos/googleplay-button.png");
   }
   
   @media (max-width: 1920px) {
